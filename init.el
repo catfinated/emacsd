@@ -269,6 +269,7 @@
 
 (use-package cc-mode
   :ensure nil
+  :mode ("\\.ipp\\'" . c++-mode)
   :config
   (setq c-basic-offset 4
         c-default-style "linux"))
@@ -402,7 +403,7 @@
 ;; ============================================================================
 
 ;; Buffer management
-(global-set-key (kbd "C-x k") 'kill-this-buffer)
+(global-set-key (kbd "C-x k") 'kill-current-buffer)
 
 ;; Window navigation
 (global-set-key (kbd "C-c w h") 'windmove-left)
